@@ -1,0 +1,141 @@
+@import url('../fonts/stylesheet.css');
+
+header{ 
+    float: left;
+    width: 100%;
+    height: 106px;
+} 
+
+#header__content{
+    padding-top: 27px;
+    font-family: 'proxima-nova-regular';
+    padding-left: 135px;
+    padding-right: 135px;
+    display: flex;
+    justify-content: space-between;
+}
+#header__right-block{  
+    display: flex;
+}
+
+.logo__block{
+    display: flex;
+    padding-top: 2px;
+    height: 50px;
+}
+.rocket{
+    float: left;
+    padding-right: 4px;
+}
+
+.logo{
+    float: left;
+}
+
+#logo__description{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 16px;
+}
+.line-in-header{
+    display: inline-block;
+    padding-top: 4px;
+}
+
+#descr__text{
+    display: inline;
+    padding-left: 30px;
+    width: 300px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 13px;
+    color: #A9C5E0;
+}
+
+#header__left-block{
+    display: flex;
+    float: right;
+}
+#phone__block{
+    padding-top: 1px;
+}
+.number{
+    float: right;
+    font-size: 13px;
+    line-height: 24px;
+    align-items: center;
+    padding-top: 13px;
+    padding-right: 28px;
+    width: 146px;
+    color: #A9C5E0;
+}
+
+.phone{
+    float: right ;
+    padding-top: 19px ;
+    padding-right: 12px;
+}
+.form__login{
+    width: 170px;
+    height: 52px;
+    box-sizing: border-box;
+    float: right;
+}
+.login-btn{
+	border: 1px solid;
+	border-color: #E5E31F;
+    color: #E5E31F;
+    font-family: 'proxima-nova-regular';
+    background-color:inherit;
+	border-radius: 10px;
+	font-size: 18px;
+	width: 168px;
+	height: 50px;
+	text-decoration: none;
+	display: inline-block;
+	transition: .3s;
+	font-size: 18px;
+	text-align: center;
+	line-height: 52px;
+}
+
+@media(max-width: 768px){
+
+    #header__content{
+        width: 90%;
+        padding-left: 15px;
+        padding-right: 10px;
+        margin-right: 0px;
+    }
+    #header__left-block{
+        flex-direction: column-reverse;
+        padding-left: 68px;
+    }
+    #phone__block{
+        padding-top: 17.5px;
+        padding-left: 0px;
+    }
+    .number{
+        padding-right: 0px;
+        margin-right: -46.5px;
+    }
+    .phone{
+        padding-right: 6px;
+    }
+}
+@media(max-width: 425px){
+
+    #logo__description{
+        display: none;
+    }
+    #header__left-block{
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+    #phone__block{
+        display: none;
+    }
+    #header__content{
+        width:96%;
+    }
+}

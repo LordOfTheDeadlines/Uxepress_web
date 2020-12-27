@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/add_news.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Admin Panel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</head>
+<body>
+<div class = "top__block">
+    <header>
+        <div class= "header__container">
+            <div id="header__content">
+                <div id="header__right-block">
+                    <div class="logo__block">
+                        <img class="rocket" src="images/rocket.svg" alt="rocket">
+                        <img class = "logo" src="images/logo.svg" alt="logo">
+                    </div>
+                    <div id="logo__description">
+                        <div class="line-in-header">
+                            <img src="images/Line.png" > 
+                        </div>
+                        <div id="descr__text">
+                            <p >Курьерская служба доставки</p>
+                        </div>                                    
+                    </div>
+                </div>
+               
+                <div id="header__left-block">
+
+                    <div id="phone__block">
+                        <p class="number">8 (909) 023-12-51</p>        
+                        <img class="phone" src="images/phone.svg" alt="phone">
+                    </div>
+                    <form class="form__login" >
+                                <button class="login-btn">Вход</button>                            
+                        </form>
+                </div>
+            </div>
+                <div style="clear: both"></div>
+    </header>
+</div>
+    </div>
+        <div class="admin__content">
+            <div class= "admin__content__text">
+                <div id="admin__content__name">Добавить новость</div>
+                <div class="admin__content__description">
+                    Введите текст новости, а также приложите изображение (размер: 270х270px, формат JPG,PNG)
+                </div>
+            </div>
+            <div class = "input-container">
+                <div class="input-container__text">
+                    <textarea id="news-text" class="input-container__news-text" placeholder="Введите текст новости" 
+                        maxlength="150" ></textarea>
+                    <div class="input-container__symbols-counter">
+                        <div  class="input-container__curr-char">
+                            <span>Символов: <span  id = "currChar">0</span>/150</span>
+                        </div>
+                    </div>
+
+                </div>
+                <form action="#">
+                    <div class="input-container__container">
+                        <div class="input-container__preview">
+                                <div class="input-container__visible-part">
+                                    <div class="input-container__add-img">
+                                        <img class="input-container__img" src="images/Shape.svg" alt="shape">
+                                        <label class="input-container__label">
+                                            <span id ="input-container__input-title" class="input-container__input-title">
+                                                + Добавить изображение</span>
+                                            <input id = 'input-container' class="input-container__input-image"  type="file" required>
+                                        </label>
+                                    </div>
+                                    <div class = 'flex-mobile input-container__adding-block'>
+                                        <span id = "img-wrap" class="input-container__img-wrap">                          
+                                        </span>
+                                        <p id = "file-name" class="input-container__file-name"> text</p>
+                                        <a href="" onclick="return false;">
+                                            <img id="revoke-btn" src="images/exit.PNG" alt="" class="input-container__revoke">
+                                        </a>
+                                    </div>
+                                </div>                          
+                        </div>
+                        <div class="submit-button">
+                            <button class="submit-button__btn" id = "submit-button" type="submit">
+                                <p class="submit-button__text ">Применить</p>
+                            </button>                                
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer >
+            <div id="footer__container">
+                <div id="footer__content">
+               
+                    <div id="footer__info-block">
+                        <div id="foooter__logo-block">
+                            <img id="footer_rocket" src="images/rocket.svg" alt="rocket">
+                            <img id="footer_logo" src="images/logo.svg" alt="logo">
+                        </div>
+                        <div class="footer__info-columns">
+                            <div class= "info-column-1">
+                                <a class="ft_link" href="">О компании</a> <br>
+                                <a class="ft_link" href="">Вакансии</a><br>
+                                <a class="ft_link" href="">Клиенту</a><br>
+                                <a class="ft_link" href="">Франчайзинг</a>
+                            </div>
+                            <div class= "info-column-2">
+                                    <a class="ft_link" href="">Доставка из Китая </a><br>
+                                    <a class="ft_link" href="">Все услуги</a><br>
+                                    <a class="ft_link" href="">Акции</a>    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__contacts">
+                            <p>manager@uexpress.ru</p>  <br>
+                            <p>115221, г. Челябинск, ул. Северная, д. 29-в </p> <br>
+                            <p>Мы работаем по 24 часа 5 дней в неделю</p> 
+                    </div>
+                </div>
+                
+            </div>
+            
+        </footer>
+            <div class="modal__window">
+                <div class="modal__window_wrap">
+                    <button class="close-btn"></button>
+                    <form action="" class="modal__window_form">
+                        <h2 class="modal__window-title">Авторизация</h2>
+                        <p class="modal__window-subtitle">Введите логин и пароль, чтобы войти в личный кабинет</p>
+                        <div class="modal__window_form-input">
+                            <input type="email" class="modal_window-input" placeholder="Логин">
+                            <input type="password" class="modal_window-input" placeholder="Пароль">
+                            <button type="submit" class="modal-btn">Войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="scripts/slider.js"></script>
+            <script src="scripts/modalWindow.js"></script>
+            </div>
+            <script src="scripts/validateform.js"></script>     
+</body>
+</html>
