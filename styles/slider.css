@@ -100,6 +100,7 @@ p {
     padding-right: 50px;
 }
 .slide-2__name{
+    font-family: "proxima-nova-bold";
     font-size: 64px;
     width: 660px;
     line-height: 64px;
@@ -235,7 +236,6 @@ p {
         width: 100%;
         max-width: 375px;
         align-self: center;
-
     }
     #slide-2{
         width: 95%;
@@ -243,9 +243,4 @@ p {
     #slide-1{
         width: 95%;
     }
-}
-@media (max-width: 330px){
-    .slide-1__name{
-        padding-top:140px ;
-    }   
 }

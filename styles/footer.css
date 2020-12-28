@@ -101,7 +101,6 @@ footer p{
     #footer__content{
         width: 96%;
         padding-left:0;
-        /* padding-top: 30px; */
         padding-bottom: 96px;
         padding-right: 0px;
         flex-direction: column;

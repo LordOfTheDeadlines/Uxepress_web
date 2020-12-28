@@ -40,8 +40,6 @@ button{
     color: #2A496B;  
 }
 
-/* body_Block1  */
-
 .body_block1{
     flex-flow: wrap;
     align-self: center;
@@ -50,7 +48,7 @@ button{
     text-align: center;
     justify-content: center;
 }
-/* body_block_1_1 */
+
 .body_block_1_1{
     display: inline-block;
 }
@@ -62,7 +60,7 @@ button{
     width: 370px;
     margin-bottom: 35px;
 }
-/* body_block_1_2 */
+
 .body_block_1_2{
     display: inline-block;
     padding: 0;
@@ -74,7 +72,6 @@ button{
     padding: 80px 151px 37px 151px;
 }
 
-/* body_block_1_3 */
 .body_block_1_3{
     display: inline-block;
 }
@@ -83,8 +80,6 @@ button{
     padding: 75px 153px 32px 153px;
 }
 
-
-/* body_Block2  */
 .body_block2{
     display: inline-block;
     width: 100%;
@@ -92,7 +87,7 @@ button{
     padding-top: 100px;
     padding-bottom: 5px;
 }
-/* body_block_2_1 */
+
 .body_block_2_1{
     display: inline-block;
     padding-right: 30px;
@@ -101,7 +96,7 @@ button{
     position: relative;
     padding: 78px 158px 36px 158px;
 }
-/* body_block_2_2 */
+
 .body_block_2_2{
     display: inline-block;
 }
@@ -109,7 +104,6 @@ button{
     position: relative;
     padding: 75px 149px 34px 149px;
 }
-
 
 .h_post {
     font-size: 19px;
@@ -129,8 +123,6 @@ button{
     width: 370px;
     padding-top: 28px;
 }
-/* --------------- */
-
 
 @media (max-width: 768px){
 
@@ -181,7 +173,6 @@ padding-bottom: 35px;
 
 @media (max-width: 425px){
     #landing-page{
-        /* min-width: 375px; */
         width: 100%;        
     }
     .content{

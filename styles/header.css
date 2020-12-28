@@ -93,10 +93,11 @@ header{
 	height: 50px;
 	text-decoration: none;
 	display: inline-block;
-	transition: .3s;
 	font-size: 18px;
 	text-align: center;
-	line-height: 52px;
+    line-height: 52px;
+    outline: none;
+    cursor: pointer;
 }
 
 @media(max-width: 768px){
